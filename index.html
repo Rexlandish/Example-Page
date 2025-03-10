@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WELCOME TO MY EPIC PAGE!!! :3</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="information and cool things about me and what i like for everyone who is interested in kewl and teh epix">
+        <meta name="keywords" content="epic, cool, interesting, kewl, awesum, grate, fun">
+        <meta name="author" content="Mitzi da one and only">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+
+
+
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/5f0efcdcd7.js" crossorigin="anonymous"></script>
+        
+        <!-- <base href="https://github.com/" target="_blank"> -->
+
+    </head>
+    <body>
+
+        <audio autoplay loop src="Audio/ott.mp3"></audio>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="gallery.html">Fun pictures!!</a></li>
+                <li><a href="contactus.html">Don't TALK to me</a></li>
+            </ul>
+        </nav>
+
+        <div id="sticky-notif">
+            <h3>ALERT!!!</h3>
+            <p>HAVE YOU??</p>
+            <img src="https://rotatingsandwiches.com/wp-content/uploads/2023/04/neapolitan-ice-cream-sandwich.gif" alt="rotatingSandwich">
+        </div>
+
+
+        <header id="header-section">
+            <div id="header-headings">
+                <h1>THE MOST INTERESTING WEBSITE EVER</h1>
+                <h2>ABSOLUTELY ENJOYABILITY GUARANTEED UPON SCROLLING DOWN</h2>
+                
+            </div>
+            <div id="button-container">
+                <button>INTEREST ME!!</button>
+            </div>
+        </header>
+
+
+
+
+
+
+        <section class="chapter-section">
+            <h2>HI SO THIS IS MY PAGE....WUUT!!!!!</h2>
+            <!-- Explain your epicness in the below...-->
+            <p>
+                <em>WELCOME</em> to the page of <strong>happiness and smiles and joy!!!</strong> today we will be talking about <span style="background: linear-gradient(90deg, red, purple);">really cool stuff</span> like <b>cake</b> and <b>slightly underbaked subway sandwich</b> <i>kinda</i> and WHATEVER!!!!! ENJOY YOUR TIME AND <u>DON'T FORGET TO TAKE A COOKIE AND AN APPLE JUICE!!!!!!</u> <del>But not u marcus you betrayed me so go away</del>
+                <br/><br/>
+                Oh did you know also that if x<sup>2</sup> was 9 then x would be either 3 or -3
+                <br/><br/>
+                Oh and also that if x<sub>0</sub> = 1 and x<sub>n + 1</sub> = x<sub>n</sub> + x<sub>n - 1</sub> thats the fibbonaci sequence
+                <br/><br/>
+                <q>you should totally visit this website i got so many reviews on the interweb that they think my website is epicc <abbr>LOLZ</abbr> and awesum &amp&amp&amp&amp&amp</q>
+
+                <br/><br/>
+                - <cite>why you should visit this site rite nao...</cite> by the most epic person ever
+
+                <br/><br/>
+                <bdo dir="rtl">WAIT A MINUTE IM BACKWARDS!!!!</bdo>
+
+                <br/><br/>
+                <code>a=2; b=0; return a/b;</code>
+
+                <br/><br/>
+                <kbd>CTRL + ALT + DELETE!!!</kbd>
+
+                <br/><br/>
+                <samp>OMIGOSH BEEP OUTPUT = HI</samp>
+
+                <br/><br/>
+                look at my epic variablez:
+                <var>variable_name_here....</var>
+                
+
+                <br/><br/>
+                i live at...
+                <address>
+                    da epic house 123<br/>
+                    tasty state<br/>
+                    bababonky, WUZUP10
+                </address>
+            </p>
+
+            <figure>
+                <img src="Pictures/dance.gif" alt="A cool dance">
+                <figcaption>A KEWL DANCE!!!</figcaption>
+            </figure>
+
+            <canvas id="myCanvas" width="1000" height="200">
+                <script>
+
+
+                    
+                    
+                    function GetCoordinates(i) {
+                        
+                        // Make sin slightly smaller than the width of the canvas
+                        var normalizedSin = (1 + 0.9 * Math.sin(i * 0.6 + time * 2)) / 2
+                        var normalizedCos = (1 + 0.9 * Math.cos(i)) / 2
+                        
+                        xPos = canvas.width * normalizedSin
+                        yPos = canvas.height * normalizedCos;
+                        
+                        return [xPos, yPos];
+                    }
+                    
+                    const canvas = document.getElementById("myCanvas");
+                    const ctx = canvas.getContext("2d");
+                    
+                    var time = 0
+                    var totalCircles = 7;
+                    function DrawGraphic()
+                    {
+
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                        ctx.fillStyle = "white";
+                        //ctx.fillRect(0, 0, canvas.width, canvas.height);
+                        
+                        // Background Gradient
+
+                        var gradient = ctx.createLinearGradient(
+                            canvas.width/2, 
+                            0,
+                            canvas.width/2,
+                            canvas.height
+                        )
+
+                        gradient.addColorStop(0, "#ff00ff22");
+                        gradient.addColorStop(0.5, "#ffee0099");
+                        gradient.addColorStop(1, "#ffff0022");
+
+                        ctx.fillStyle = gradient 
+    ;
+                        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                        // Cycle wave
+                        var xPos;
+                        var yPos;
+
+                        var i = 0
+                        const startCoord = GetCoordinates(i)
+
+                        ctx.strokeStyle = "#ffff0055"
+
+                        ctx.beginPath();
+                        ctx.moveTo(startCoord[0], startCoord[1]);
+
+                        ctx.lineWidth = 8;
+                        for (i = 0; i < 32; i += 0.1)
+                        {
+                            var nextCoord = GetCoordinates(i)
+                            ctx.lineTo(nextCoord[0], nextCoord[1]);
+                        }
+                        ctx.stroke();
+
+                        // Circles
+                        
+                        
+                        gradient = ctx.createLinearGradient
+                        (
+                            0,
+                            canvas.height/2,
+                            canvas.width,
+                            canvas.height/2
+                        )
+
+                        gradient.addColorStop(0, "#00ffff");
+                        gradient.addColorStop( (1 + Math.sin(20 * time))/2 , "#ffffff");
+                        gradient.addColorStop(1, "#ff00ff");
+                        
+                        ctx.fillStyle = gradient;
+
+
+                        var radiusFallOff = 8//1 + (1 + Math.sin(time))/2
+
+                        //if (radiusSize < 0) radiusSize = 0.1
+                        
+                        for (i = 0; i < totalCircles; i ++)
+                        {
+                            //var radiusSize = (1 - (Math.abs(i + 0.5 - totalCircles / 2 ) ) / radiusFallOff) * canvas.height * 0.4
+                            var radiusMultiplier = 0.5 + 0.5 * (1 + Math.sin(i + 10 * time)) / 2;
+                            var radiusSize = canvas.height * 0.25 * radiusMultiplier;
+                            ctx.beginPath();
+                            ctx.arc(
+                                canvas.width * (i / totalCircles) + canvas.width / (totalCircles * 2),
+                                canvas.height / 2 + 0.9 * (canvas.height / 2 - radiusSize) * Math.sin(i + 15 * time), // Wave movement
+                                radiusSize,
+                                0, Math.PI * 2
+                            );
+                            ctx.fill();
+                        }
+
+                        // Change variables for next time
+
+                        time += 0.01/timeInterval;
+                    }
+                    const timeInterval = 10
+                    setInterval(DrawGraphic, timeInterval);
+
+                    
+
+                </script>
+            </canvas>
+
+        </section>
+
+        <footer>
+            <div class="footer-copyright">
+                <p> &copy; 2025 KewlProductions Co. All rights reserved!</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">Fun Pictures</a></li>
+                    <li><a href="contactus.html">Don't TALK to me</a></li>
+                </ul>
+            </div>
+            <div class="footer-icons">
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=nEoZztgCji0" target="_blank"><i class="fa-solid fa-headphones"></a></i></li>
+                    <li><a href="https://www.cartoonnetwork.co.uk/games/gumball-pool-party/play" target="_blank"><i class="fa-solid fa-gamepad"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+    </body>
+</html>
